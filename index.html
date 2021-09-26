@@ -37,7 +37,14 @@ clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agre
 		 var s = document.getElementsByTagName('script')[0];
 		 s.parentNode.insertBefore(wzrk, s);
   })();
+		
+var URL = window.location.href;	
+clevertap.event.push("Page Viewed", {
+  "URL":URL
+});
+		
 </script>
+	
 
 </head> 
 
